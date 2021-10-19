@@ -9,14 +9,14 @@ let confirmacion0 = true; // Confirmacion de  duplicación de item ingresado, co
 let confirmacion1 = true; // Confirmacion de creación de Nuevo Item. Inicialización.
 let confirmacion2 = true; // Confirmacion de Borrado Item. Inicialización.
 let confirmacion3 = true; // Confirmacion continuar Ordenamiento-Filtrado en modo visualización de una copia del listado de Items. Inicialización.
+let idItm = 0; // Inicializo el identificador del item, el cual se incrementara con la creacion de cada objeto.
 let itemBorrar = 0; // Variable que almacena el numero de item a borrar ingresado por el usuario. Inicialización.
 let itemOrdenar = 0; // Variable que guarda campo silicitado al usuario para ordenar campos. Inicialización.
 let itemFiltrar = 0; // Variable que guarda campo silicitado al usuario para filtrar campos. Inicialización.
-let repeticion = 0; // Subindice de repeticion item. Inicialización.
 let itemGame; // Variable que almacena nuevo objeto/item a ingresar en el array de videoJuegos.
-const btnDelet = document.querySelector("#btnDelet"); // Como parte de sumar optimizacion al codigo, aplique algo de interaccion con el codigo HTML mediante un boton de borrado, y bootstrap.
+let repeticion = 0; // Subindice de repeticion item. Inicialización.
 let videoJuegos = JSON.parse(localStorage.getItem('videoJuegos')) || []; // Array que almacena los items ingresados por el usuario a modo de objetos. Se realiza lectura del array almacenado en localStorage.
-let idItm = 0; // Inicializo el identificador del item, el cual se incrementara con la creacion de cada objeto.
+const btnDelet = document.querySelector("#btnDelet"); // Como parte de sumar optimizacion al codigo, aplique algo de interaccion con el codigo HTML mediante un boton de borrado, y bootstrap.
 const btnEjec = document.querySelector("#btnEjec"); // Como parte de sumar optimizacion al codigo, aplique algo de interaccion con el codigo HTML mediante un boton de ejecucion, y bootstrap.
 const btnOrder = document.querySelector("#btnOrder"); // Como parte de sumar optimizacion al codigo, aplique algo de interaccion con el codigo HTML mediante un boton de ordenamiento - filtrado, y bootstrap.
 
